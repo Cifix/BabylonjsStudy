@@ -41,6 +41,14 @@ ground.material = new BABYLON.StandardMaterial();
 ground.material.wireframe = true;
 */
 
+const groundFromHM = new BABYLON.MeshBuilder.CreateGroundFromHeightMap('','/Asset/Images/heightmap.png',
+  {
+    height:10,
+    width:10,
+    subdivisions:100
+  }
+);
+
 
 return scene;
 }
